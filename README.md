@@ -16,21 +16,21 @@ Nota: Podría crearse un modal, que al momento de hacer logout, consulte al usua
 
 Habría que tener aproximadamente 4 tablas para almacenar la información, que me permita hacer gestión del sistema de inventarios, las tablas especifico a continuación con sus columnas respectivas:
 
-// Para Usuarios:
+Para Usuarios:
 users
     id (uuid v4, PK),
     email,
     username,
     password
 
-// Proveedores
+Proveedores
 suppliers 
     id (uuid v4, PK),
     name_sup,
     contact_sup,
     desc_sup
 
-//Productos
+Productos
 products 
     id (uuid v4, PK),
     name_prod,
@@ -38,7 +38,7 @@ products
     quant_prod (integer),
     supplier_id UUID REFERENCES suppliers(id)
 
-//Transacciones (Ingresos y salidas de articulos)
+Transacciones (Ingresos y salidas de articulos)
 transactions
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     date_trans DATE DEFAULT CURRENT_DATE,
@@ -48,7 +48,7 @@ transactions
 
 Los endpoints que necesitariamos para llevar a cabo el proyecto:
 
-- 1. POST /user/register
+- POST /user/register
 Recibirá un body como el siguiente:
 ```
 {
