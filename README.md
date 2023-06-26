@@ -136,11 +136,27 @@ La Idea sería hacer la aplicación First Mobile y Desktop y constará de 4 pág
 - LogOut ( Modal o página - Ver conveniencia )
 
 ### Observaciones:
-- 'La pagina register': Deberá tener como título /Registro/ y un formulario:
+- La pagina register: Deberá tener como título /Registro/ y un formulario:
 - Campo UserName (requerido)
 - Campo Correo   (requerido)
 - Campo Password (requerido)
 - Campo Submit   (Para registro)
+--------------------------------------------------------------------------------
+- La página Login: Deberá tener como título, Inicio Sesión y un formulario:
+- Campo email    ( requerido )
+- Campo password ( requerido )
+- Campo Submit   ( Para inicio de sesión )
+--------------------------------------------------------------------------------
+- La página de panel Lista de artículos: Deberá tener un form, donde mostrará una lista ordenada de todos los artículos registrados, con su ID, código de artículo, descripción, cantidad en stock y nombre del proveedor de origen. Al lado podrá contener un botón para eliminarlo, o editarlo respectivamente.
 
+- En la parte superior derecha, contendrá el nombre del usuario logeado en el App, y un especie de navbar que lo contendrá y un borón para cerrar la sesión, y un acceso para navegar a la página de transacciones.
+--------------------------------------------------------------------------------
+-En la página de transacciones, habrá un formulario, donde vamos a meter los valores del articulo a ingresar con los siguientes campos:
 
- 
+- Campo Codigo Articulo,
+- Campo Nombre Artículo,
+- Campo Descripción,
+- Campo Cantidad a ingresar,
+- Campo Proveedor
+- Campo Submit (Grabar los cambios)
+- Campo Cancelar (Me redirecciona al HomePage)
