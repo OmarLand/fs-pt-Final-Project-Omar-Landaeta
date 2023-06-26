@@ -4,7 +4,7 @@
 
 # Sistema de inventario de artículos
 
-## Definición de cliente:
+## Definición de cliente: :hammer: 🚀 👻
 
 El usuario requiere de una aplicación donde deberá registrarse si no está registrado para acceder. Si no está registrado habrá un link que le lleve a un formulario de registro usando: correo, nombre de usuario y contraseña. En la vista de registro, deberá haber un link en caso que ya tenga un usuario registrado le redireccione a la pagina de Logín principal.
 
@@ -16,7 +16,7 @@ también en la pagina principal luego de logearse, deberá tener un botón del l
 Nota: Podría crearse un modal, que al momento de hacer logout, consulte al usuario si está de acuerdo con salir de la aplicación o no.
 
 ## Definición técnica
-### Backend:
+### Backend: ✈🚀
 
 Habría que tener aproximadamente 4 tablas para almacenar la información, que me permita hacer gestión del sistema de inventarios, las tablas especifico a continuación con sus columnas respectivas:
 
@@ -121,7 +121,7 @@ Recibirá un body como el siguiente:
 }
 ```
 
-### Frontend:
+### Frontend: 🎮👨‍💻✨
 
 La Idea sería hacer la aplicación First Mobile y Desktop y constará de 4 páginas inicialmente:
 
@@ -135,7 +135,7 @@ La Idea sería hacer la aplicación First Mobile y Desktop y constará de 4 pág
 
 - LogOut ( Modal o página - Ver conveniencia )
 
-### Observaciones:
+### Observaciones: 👀😎
 - La pagina register: Deberá tener como título /Registro/ y un formulario:
 - Campo UserName (requerido)
 - Campo Correo   (requerido)
