@@ -11,9 +11,51 @@ también en la pagina principal luego de logearse, deberá tener un botón del l
 
 Nota: Podría crearse un modal, que al momento de hacer logout, consulte al usuario si está de acuerdo con salir de la aplicación o no.
 
-## Defición técnica
-
+## Definición técnica
 ### Backend:
 
+Habría que tener aproximadamente 4 tablas para almacenar la información, que me permita hacer gestión del sistema de inventarios, las tablas especifico a continuación con sus columnas respectivas:
+
+// Para Usuarios:
+users
+    id (uuid v4, PK),
+    email,
+    username,
+    password
+
+// Proveedores
+suppliers 
+    id (uuid v4, PK),
+    name_sup,
+    contact_sup,
+    desc_sup
+
+//Productos
+products 
+    id (uuid v4, PK),
+    name_prod,
+    desc_prod,
+    quant_prod (integer),
+    supplier_id UUID REFERENCES suppliers(id)
+
+//Transacciones (Ingresos y salidas de articulos)
+transactions
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    date_trans DATE DEFAULT CURRENT_DATE,
+    tipo_trans VARCHAR(10) NOT NULL,
+    product_id UUID REFERENCES products(id),
+    quant_trans INTEGER NOT NULL
+
+Los endpoints que necesitariamos para llevar a cabo el proyecto:
+
+- 1. POST /user/register
+Recibirá un body como el siguiente:
+```
+{
+  "user"     : "UserName",
+  "email"    : "correos@domain.com",
+  "password" : "* * * * * * * * * * *"
+}
+```
 
 ### Frontend:
