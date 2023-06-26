@@ -160,3 +160,7 @@ La Idea sería hacer la aplicación First Mobile y Desktop y constará de 4 pág
 - Campo Proveedor
 - Campo Submit (Grabar los cambios)
 - Campo Cancelar (Me redirecciona al HomePage)
+
+### Funcionamiento gráfico del Proyecto: 🤩🤯🚀👨‍💻
+
+![Alt text](image.png)
