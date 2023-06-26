@@ -1,3 +1,7 @@
+<h4 align="center">
+:construction: Proyecto en construcción :construction:
+</h4>
+
 # Sistema de inventario de artículos
 
 ## Definición de cliente:
@@ -22,6 +26,7 @@ users
     email,
     username,
     password
+
 
 - Proveedores:
 suppliers 
@@ -118,7 +123,7 @@ Recibirá un body como el siguiente:
 
 ### Frontend:
 
-* La Idea sería hacer la aplicación First Mobile y Desktop y constará de X páginas:
+La Idea sería hacer la aplicación First Mobile y Desktop y constará de 4 páginas inicialmente:
 
 - Register (Sin proteger, y en caso de estar logeados que redireccione al HomePage).
 
@@ -128,3 +133,14 @@ Recibirá un body como el siguiente:
 
 - Panel para transacciones (Entradas o salida de artículos y protegida si no estamos logeado nos redireccionará al login).
 
+- LogOut ( Modal o página - Ver conveniencia )
+
+### Observaciones:
+- 'La pagina register': Deberá tener como título /Registro/ y un formulario:
+- Campo UserName (requerido)
+- Campo Correo   (requerido)
+- Campo Password (requerido)
+- Campo Submit   (Para registro)
+
+
+ 
