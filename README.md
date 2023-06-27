@@ -54,7 +54,7 @@ transactions
 Los endpoints que necesitariamos para llevar a cabo el proyecto:
 
 * Para Registrarse:
-- POST /user/register
+- POST /auth/signup
 Recibirá un body como el siguiente:
 ```
 {
@@ -65,7 +65,7 @@ Recibirá un body como el siguiente:
 ```
 
 * Para logearse:
-- GET /user/login
+- GET /auth/signin
 Recibirá un body como el siguiente:
 ```
 {

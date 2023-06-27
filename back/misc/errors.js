@@ -1,15 +1,15 @@
 module.exports = {
     400: {
       statusCode: 400,
-      error: new Error("Fields are mandatory!"),
+      error: new Error("Hay Campos ¡Obligatorios!"),
     },
     wrong_data: {
       statusCode: 400,
-      error: new Error("Username or Password wrong!"),
+      error: new Error("Usuario o contraseña invalida."),
     },
     401: {
       statusCode: 401,
-      error: new Error("unauthorized"),
+      error: new Error("Unauthorized"),
     },
     timeout_access: {
       statusCode: 401,
@@ -22,10 +22,6 @@ module.exports = {
     404: {
       statusCode: 404,
       error: new Error("===> No encuentro la ruta..."),
-    },
-    418: {
-      statusCode: 418,
-      error: new Error("i'm a teapot!!"),
     },
     500: {
       statusCode: 500,
