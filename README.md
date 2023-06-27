@@ -162,10 +162,7 @@ La Idea sería hacer la aplicación First Mobile y Desktop y constará de 4 pág
 - Campo Cancelar (Me redirecciona al HomePage)
 
 
-<h4 align="center">
 
-  ### 🤩🤯🚀👨‍💻 Funcionamiento gráfico del Proyecto: 🤩🤯🚀👨‍💻
-
-</h4>
+### 🤩🤯🚀👨‍💻 Funcionamiento gráfico del Proyecto: 🤩🤯🚀👨‍💻
 
 ![Alt text](image.png)
