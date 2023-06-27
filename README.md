@@ -163,7 +163,9 @@ La Idea sería hacer la aplicación First Mobile y Desktop y constará de 4 pág
 
 
 <h4 align="center">
-  ### Funcionamiento gráfico del Proyecto: 🤩🤯🚀👨‍💻
+
+  ### 🤩🤯🚀👨‍💻 Funcionamiento gráfico del Proyecto: 🤩🤯🚀👨‍💻
+
 </h4>
 
 ![Alt text](image.png)
