@@ -65,7 +65,7 @@ Recibirá un body como el siguiente:
 ```
 
 * Para logearse:
-- GET /auth/signin
+- POST /auth/signin
 Recibirá un body como el siguiente:
 ```
 {
