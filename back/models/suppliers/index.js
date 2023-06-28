@@ -43,7 +43,7 @@ const createNewSupplier = ( db ) => async ( infoSupplier ) =>{
         }
         
     } catch (error) {
-        console.info('===> Error al crear Proveedor.. ->', error);
+        // console.info('===> Error al crear Proveedor.. ->', error);
         return{
             ok      : false,
             message : error.message,
