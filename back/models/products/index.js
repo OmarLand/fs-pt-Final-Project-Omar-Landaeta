@@ -1,5 +1,5 @@
 const { sql } = require('slonik');
-const { selectAllProducts } = require('./queries');
+const { selectAllProducts, selectProduct } = require('./queries');
 
 
 // Función que me trae todos los productos en pantalla
@@ -11,7 +11,7 @@ const getProducts = ( db ) => async () => {
         return {
             ok : true,
             response: response.rows,
-        }
+        }    
         
     } catch (error) {
         console.info('==> Error con el SELECT -> : ', error);
@@ -45,9 +45,9 @@ const addNewProduct = ( db ) => async( infoProduct ) => {
             )
         `)
         return {
-            ok : true,
-        }
-        
+            ok : true
+        }   
+
     } catch (error) {
         console.info('Error al insertar el producto: =>>> ', error);
         return {
@@ -55,10 +55,30 @@ const addNewProduct = ( db ) => async( infoProduct ) => {
             message : error.message,
         }
     }
+}
 
+const selectOneProduct = (db) => async( id = null ) => {
+    try {
+
+        const response = await db.query( selectProduct( id ) );
+
+        console.log( 'Response: ==> ', response );
+
+        return {
+            ok       : true,
+            response : response.rows
+        }
+        
+    } catch (error) {
+        return{
+            ok      : false,
+            message : error.message,
+        }
+    }
 }
 
 module.exports = {
     getProducts,
     addNewProduct,
+    selectOneProduct
 }

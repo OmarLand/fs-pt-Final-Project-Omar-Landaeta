@@ -123,11 +123,10 @@ Tendriamos un endpoint para registrar los articulos:
 Recibirá un body como el siguiente:
 ```
 {
-  "code"        : "abc123",
-  "name"        : "ArticleN",
-  "description" : "lorem ipsum sempter blablabla",
-  "quantity"    : "99",
-  "supplier"    : "Supplier_Name"
+  "name_prod"        : "ArticleN",
+  "desc_prod"        : "lorem ipsum sempter blablabla",
+  "quant_prod"       : "99",
+  "name_sup_product" : "Proveedor_Existente"
 }
 ```
 
