@@ -51,6 +51,9 @@ transactions
     product_id UUID REFERENCES products(id),
     quant_trans INTEGER NOT NULL
 
+----------------------------------------------------------------------------------------------
+### endpoints autenticación
+
 Los endpoints que necesitariamos para llevar a cabo el proyecto:
 
 * Para Registrarse:
@@ -77,11 +80,39 @@ En caso que el usuario no exista o se haya equivocado de credenciales, mostrar u
 
 Al validarse el usuario, se muestra el HomePage de la aplicación mostrando los articulos registrados si los hubiera
 
+* Para Cerrar la sesión:
+Creamos el siguiente endpoint:
+```
+- POST /auth/signout
+```
+--------------------------------------------------------------------------------------------
+### endpoints Proveedores:
+Creamos un endpoint inicial para mostrar aquellos que hayan sido registrados en el App:
+
+* Muestra todos los proveedores registrados:
+- GET /suppliers
+```
+Muestra todos los productos registrados
+```
+
+* Registra un nuevo proveedor:
+- POST /suppliers/new
+```
+{
+  "name_sup"     : "SupplierName",
+  "contact_sup"  : "correo@domain.com",
+  "desc_sup"     : "Potencial, poor, interesting, to evaluate..."
+}
+```
+
+
+--------------------------------------------------------------------------------------------
+### endpoints Productos:
 Creamos un endpoint para mostrar los articulos:
 
 * Muestra los articulos registrados:
 - GET /products
-Recibirá un body como el siguiente:
+
 ```
 Muestra todos los productos registrados
 ```
@@ -165,4 +196,4 @@ La Idea sería hacer la aplicación First Mobile y Desktop y constará de 4 pág
 
 ### 🤩🤯🚀👨‍💻 Funcionamiento gráfico del Proyecto: 🤩🤯🚀👨‍💻
 
-![Alt text](image.png)
+![Alt text](image-1.png)
