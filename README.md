@@ -117,6 +117,14 @@ Creamos un endpoint para mostrar los articulos:
 Muestra todos los productos registrados
 ```
 
+Tendriamos un endpoint para ver articulo por ID de un articulo si fuese necesario:
+* Para editar articulos:
+```
+{
+  - GET /products/:id
+}
+```
+
 Tendriamos un endpoint para registrar los articulos:
 * Para registrar articulos:
 - POST /products/register
@@ -132,13 +140,13 @@ Recibirá un body como el siguiente:
 
 Tendriamos un endpoint para editar los articulos si fuese necesario:
 * Para editar articulos:
-- PUT /products/:id
+- PUT /products/edit/:id
 Recibirá un body como el siguiente:
 ```
 {
-  "name"        : "ArticleN",
-  "description" : "lorem ipsum sempter blablabla",
-  "quantity"    : "99",
+  "name_prod"        : "Nuevo Articulo",
+  "desc_prod"        : "Esta es una descripcion de pruebas",
+  "quant_prod"       : "25"
 }
 ```
 Tendriamos un endpoint para eliminar los articulos si fuese necesario:

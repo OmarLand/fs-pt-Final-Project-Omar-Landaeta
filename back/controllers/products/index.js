@@ -1,7 +1,8 @@
 module.exports = {
 
-    getProducts      : require('./getProducts'),
-    newProducts      : require('./newProducts'),
-    getProductById  : require('./getProductById'),
+    getProducts    : require('./getProducts'),
+    newProducts    : require('./newProducts'),
+    getProductById : require('./getProductById'),
+    updateProduct  : require('./updateProduct'),
     
 }

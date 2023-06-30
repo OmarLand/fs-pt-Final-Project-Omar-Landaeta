@@ -77,8 +77,37 @@ const selectOneProduct = (db) => async( id = null ) => {
     }
 }
 
+const updateTheProduct = ( db ) => async ( id, newContent  ) => {
+
+    console.log('Entro en el Model El ID a modificar: ==> ', id);
+    console.log('Entro en el Model Nuevo contenido: ==> ', newContent);
+
+    try {
+
+        await db.query(sql.unsafe`
+            UPDATE products
+            SET name_prod=${newContent.name_prod}, desc_prod=${newContent.desc_prod}, quant_prod=${newContent.quant_prod}
+            WHERE id = ${id}
+        `)
+
+        return{
+            ok      : true,
+            message : 'Producto actualizado correctamente',
+        }
+        
+    } catch (error) {
+        console.info('Error al actualizar el producto. ==> ', error);
+        return {
+            ok : false,
+            message: error.message,
+        }
+    }
+
+}
+
 module.exports = {
     getProducts,
     addNewProduct,
-    selectOneProduct
+    selectOneProduct,
+    updateTheProduct,
 }
