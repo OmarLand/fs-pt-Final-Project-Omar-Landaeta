@@ -7,13 +7,17 @@ module.exports = {
       statusCode: 400,
       error: new Error("Usuario o contraseña invalida."),
     },
+    pass_length: {
+      statusCode: 400,
+      error: new Error("El Password debe contener al menos 4."),
+    },
     401: {
       statusCode: 401,
       error: new Error("Unauthorized"),
     },
     timeout_access: {
       statusCode: 401,
-      error: new Error(" Oh oh! No tienes autorización!"),
+      error: new Error(" Oh oh! Por seguridad, ha expirado la sesión...!"),
     },
     403: {
       statusCode: 403,
