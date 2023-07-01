@@ -105,9 +105,34 @@ const updateTheProduct = ( db ) => async ( id, newContent  ) => {
 
 }
 
+const deleteTheProduct = ( db ) => async( id  ) => {
+
+    console.log('Entro en el Model El ID para eliminar articulo: ==> ', id);
+
+    try {
+
+        await db.query( sql.unsafe`
+            DELETE FROM products WHERE id = ${id}
+        ` )
+        return {
+            ok : true,
+            message: 'Producto eliminado correctamente.'
+        }
+        
+    } catch (error) {
+        console.info( 'Error al intentar eliminar el producto: ', error );
+        return{
+            ok      : false,
+            message : error.message,
+        }
+    }
+
+}
+
 module.exports = {
     getProducts,
     addNewProduct,
     selectOneProduct,
     updateTheProduct,
+    deleteTheProduct,
 }
