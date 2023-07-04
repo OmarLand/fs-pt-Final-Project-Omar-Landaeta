@@ -6,6 +6,7 @@ import { Switch, Route, Redirect } from 'wouter';
 //Paginas importadas
 import Login from './pages/Login/index.jsx';
 import Register from './pages/Register/index.jsx';
+import Panel from './pages/Panel/index.jsx';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
+            <Route path="/panel" component={Panel} />
 
             <Redirect to="/login"/>
 

@@ -31,6 +31,10 @@ const Form = styled.form`
             border-radius : 10px;
             box-shadow    : 1px 1px 15px black;
         }
+        
+        .submitButton:hover{
+            background-color: #EEFCCE;
+        }
     }
 
         
@@ -61,6 +65,9 @@ const Form = styled.form`
             height        : 30px;
             border-radius : 10px;
             box-shadow    : 1px 1px 15px black;
+        }
+        .submitButton:hover{
+            background-color: #EEFCCE;
         }
     }
 

@@ -10,7 +10,7 @@ const FormRegister = () => {
                 <br />
                 <input className="input-text" required type="password" placeholder="* * * * * * * *" name="" id="" />
                 <br />
-                <input className='submitButton' type="submit" />
+                <input className='submitButton' type="submit" value="Registrar"/>
             </Styled.FormRegisterStyle>
 
         

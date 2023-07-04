@@ -31,6 +31,10 @@ const FormRegisterStyle = styled.form`
             border-radius : 10px;
             box-shadow    : 1px 1px 15px black;
         }
+
+        .submitButton:hover{
+            background-color: #EEFCCE;
+        }
     }
 
         
@@ -45,23 +49,32 @@ const FormRegisterStyle = styled.form`
         }
 
         .input-text{
+
             margin-top    : 14px;
             margin-bottom : 10px;
             width         : 250px;
             height        : 30px;
             text-align    : center;
-            font-size     : 18px; 
+            font-size     : 13px; 
             box-shadow    : 1px 1px 10px black;
             border-radius : 10px;
+
         }
     
+    
         .submitButton{
+
             margin-top    : 20px;
             margin-bottom : 20px;
             width         : 95px;
             height        : 30px;
             border-radius : 10px;
             box-shadow    : 1px 1px 15px black;
+
+        }
+
+        .submitButton:hover{
+            background-color: #EEFCCE;
         }
     }
 

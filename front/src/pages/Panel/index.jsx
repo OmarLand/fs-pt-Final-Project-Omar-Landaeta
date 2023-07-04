@@ -1,13 +1,13 @@
-import Title from "../../components/Title";
-import Styled from '../../components/Title/styles';
+// import Styled from '../../style';
+import MainPanel from "../../components/PanelMain";
+
+
 
 const Panel = () => {
 
     return(
         <>
-            <Styled.LogContain>
-                <Title title='App de Gestión'/>
-            </Styled.LogContain>
+            <MainPanel/>
         </>
     )
 

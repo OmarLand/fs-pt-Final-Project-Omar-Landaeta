@@ -34,6 +34,7 @@ const LogContain = styled.div`
 
 `
 
+
 export default {
     LogContain,
 };
