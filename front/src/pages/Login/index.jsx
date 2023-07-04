@@ -1,8 +1,8 @@
 import Styled from '../../components/Title/styles';
 
-import Form from "../../components/Form";
 import Title from "../../components/Title";
 import MainImage from '../../components/MainImage';
+import FormLogin from '../../components/FormLogin';
 
 
 const Login = () => {
@@ -10,15 +10,17 @@ const Login = () => {
     return(
         <>
             <Styled.LogContain>
+                
                 <Title title='App de Gestión'/>
 
-                <MainImage img='https://cdn.icon-icons.com/icons2/3446/PNG/512/account_profile_user_avatar_icon_219236.png'/>
+                <MainImage img='https://www.pngplay.com/wp-content/uploads/12/User-Avatar-Profile-Background-PNG-Clip-Art-Image.png'/>
 
                 <Title subtitle='Inicio de Sesión'/>
 
-                <Form>
+                <FormLogin />
 
-                </Form>
+                <h3 className='goToRegister'>¿No estás registrado aún?</h3>
+                <a href="/register"> <h3 className='click-toRegister'>Click aqui para registrarte</h3> </a>
 
             </Styled.LogContain>
         </>
