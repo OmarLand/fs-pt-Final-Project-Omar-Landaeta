@@ -2,17 +2,18 @@ import { Link } from 'wouter';
 
 import Styled from '../../components/PanelMain/styles';
 import Title from "../../components/Title";
-
-import PanelContainer from '../../components/PanelMain';
 import NavBar from '../../components/NavBar';
+import SuppliersList from '../../components/FormSuppliers';
 
 const links = [
     <Link href="/panel"><a className='links-styled'> Inicio </a></Link>, 
     <Link href="/suppliers"><a className='links-styled'> Proveedores </a></Link>,
-    "Transacciones", 
+    "Transacciones" 
 ];
 
-const PanelMain = () => {
+
+
+const PanelSuppliers = () => {
 
     return(
         <>
@@ -20,8 +21,10 @@ const PanelMain = () => {
              
                 <Title title='App de Gestión'/>
                 <NavBar links = {links}/>
-                
-                <PanelContainer/>
+
+
+                <SuppliersList />
+            
 
             </Styled.PanelContain>
         </>
@@ -30,4 +33,4 @@ const PanelMain = () => {
 }
 
 
-export default PanelMain;
+export default PanelSuppliers;

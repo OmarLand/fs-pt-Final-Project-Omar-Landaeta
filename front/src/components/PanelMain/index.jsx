@@ -1,20 +1,69 @@
 import Styled from './styles.jsx';
-import Title from "../../components/Title";
 
-const MainPanel = () => {
-    return(
+const PanelContainer = () => {
+    return (
         <>
-            <Styled.MainPanelContain>
+            <h2>Contenido de la base</h2>
 
-               <Title title='App de Gestión'/>
+            <div className="dataProducts">
 
-               <h2>Contenedor de productos...</h2>
-               <h2>Contenedor de productos...</h2>
-               <h2>Contenedor de productos...</h2>
+                <table>
+                    <tr>
+                        <th>Cod</th>
+                        <th>Nombre</th>
+                        <th>Stock</th>
+                        <th>Proveedor</th>
+                    </tr>
+                    <tr>
+                        <td>ABC123</td>
+                        <td>Product_1</td>
+                        <td>15</td>
+                        <td>Proveedor_1</td>
+                    </tr>
+                    <tr>
+                        <td>ABC123</td>
+                        <td>Product_1</td>
+                        <td>15</td>
+                        <td>Proveedor_1</td>
+                    </tr>
+                    <tr>
+                        <td>ABC123</td>
+                        <td>Product_1</td>
+                        <td>15</td>
+                        <td>Proveedor_1</td>
+                    </tr>
+                    <tr>
+                        <td>ABC123</td>
+                        <td>Product_1</td>
+                        <td>15</td>
+                        <td>Proveedor_1</td>
+                    </tr>
+                    <tr>
+                        <td>ABC123</td>
+                        <td>Product_1</td>
+                        <td>15</td>
+                        <td>Proveedor_1</td>
+                    </tr>
+                    <tr>
+                        <td>ABC123</td>
+                        <td>Product_1</td>
+                        <td>15</td>
+                        <td>Proveedor_1</td>
+                    </tr>
+                    <tr>
+                        <td>ABC123</td>
+                        <td>Product_1</td>
+                        <td>15</td>
+                        <td>Proveedor_1</td>
+                    </tr>
+             
                
-            </Styled.MainPanelContain>
+                </table>
+
+            </div>
+
         </>
     )
 }
 
-export default MainPanel;
+export default PanelContainer;

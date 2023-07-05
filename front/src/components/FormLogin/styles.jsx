@@ -4,6 +4,7 @@ const Form = styled.form`
 
         
     @media screen and (max-width : 640px) {
+        
 
         body{
     
