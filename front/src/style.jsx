@@ -21,8 +21,8 @@ const ContainerPage = styled.div`
             border-radius           : 10px;
             border                  : 1px solid rgba( 255, 255, 255, 0.18 );
             width                   : 65%;
+            height                  : 550px;
             color                   : white;
-            height                  : 510px;
             box-shadow              : 1px 1px 20px white;
 
             .goToRegister{

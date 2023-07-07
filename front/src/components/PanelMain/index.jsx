@@ -3,7 +3,7 @@ import Styled from './styles.jsx';
 const PanelContainer = () => {
     return (
         <>
-            <h2>Contenido de la base</h2>
+            <h2>Listado de productos:</h2>
 
             <div className="dataProducts">
 

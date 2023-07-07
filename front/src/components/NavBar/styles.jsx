@@ -5,7 +5,7 @@ const NavBarStyle = styled.div`
     @media screen, (max-width : 640px) {
 
         .navbar{
-            border: 1px solid black;
+            border           : 1px solid black;
             background-color : #9BD1E5;
             color            : black;
             display          : flex;
@@ -17,8 +17,15 @@ const NavBarStyle = styled.div`
             padding          : 5px;
             margin-top       : 8px;
             font-size        : 18px;
-            text-align: center;
+            text-align       : center;
+            box-shadow       : 1px 1px 10px black;
+            border-radius    : 9px;
 
+        }
+
+        a:link, a:active, a:visited {
+            text-decoration: none;
+            color: black;
         }
 
         .navbar li:hover{
@@ -43,7 +50,9 @@ const NavBarStyle = styled.div`
             padding          : 5px;
             margin-top       : 8px;
             font-size        : 18px;
-            text-align: center;
+            text-align       : center;
+            box-shadow       : 1px 1px 10px black;
+            border-radius    : 9px;
 
         }
 

@@ -16,7 +16,6 @@ const PanelContain = styled.div`
     }
 
     .dataProducts{
-        border: 1px solid red;
         height: 63%;
         max-width: 100%;
         
@@ -58,7 +57,6 @@ const PanelContain = styled.div`
     }
 
     .dataProducts{
-        border: 1px solid red;
         height: 67%;
         max-width: 100%;
         
