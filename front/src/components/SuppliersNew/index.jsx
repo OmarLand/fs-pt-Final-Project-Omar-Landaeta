@@ -1,11 +1,11 @@
 import Styled from './styles';
 
-
 const NewSuppliers = () => {
+
+
     return(
         <>
             <Styled.FormNewSuppliers>
-
 
                 <form>
 
@@ -19,9 +19,11 @@ const NewSuppliers = () => {
                     <br />
 
                     <input className='button-submit' type="submit" value="Grabar" />
-                    <input className='button-submit' type="submit" value="Volver" />
+                    <input className='button-submit' type="button" value="Volver"/>
 
-                    {/* <a href="/suppliers" >Volver</a> */}
+                   {/* <div className='button-submit'>
+                        <Link href="/suppliers" > <a>Volver</a> </Link>
+                    </div>  */}
 
                 </form>
 
