@@ -6,7 +6,6 @@ const SuppliersNewPage = () => {
         <>
             <Styled.FormNewSuppliers>
             
-                <h2>Hey New suppliers!!!</h2>
                 <NewSuppliers />
             
             </Styled.FormNewSuppliers>

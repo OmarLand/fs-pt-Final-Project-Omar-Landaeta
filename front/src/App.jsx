@@ -9,7 +9,7 @@ import Register from './pages/Register/index.jsx';
 import Panel from './pages/Panel/index.jsx';
 import Suppliers from './pages/Suppliers/index.jsx';
 import SuppliersNew from './pages/SuppliersNew/index.jsx';
-
+import NewProductsPage from './pages/ProductsNew/index.jsx';
 
 function App() {
 
@@ -27,6 +27,7 @@ function App() {
             <Route path="/panel" component={Panel} />
             <Route path="/suppliers" component={Suppliers} />
             <Route path="/suppliersnew" component={SuppliersNew} />
+            <Route path="/productsnew" component={NewProductsPage} />
 
 
             <Redirect to="/login"/>

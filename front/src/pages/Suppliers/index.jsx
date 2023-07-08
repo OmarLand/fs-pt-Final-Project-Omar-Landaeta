@@ -8,7 +8,7 @@ import SuppliersList from '../../components/FormSuppliers';
 const links = [
     <Link href="/panel"><a className='links-styled'> Inicio </a></Link>, 
     <Link href="/suppliers"><a className='links-styled'> Proveedores </a></Link>,
-    "Transacciones" 
+    <Link href="/productsnew"><a className='links-styled'> Transacciones </a></Link>,
 ];
 
 

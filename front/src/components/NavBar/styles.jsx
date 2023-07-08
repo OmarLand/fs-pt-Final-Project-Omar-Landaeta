@@ -14,7 +14,7 @@ const NavBarStyle = styled.div`
             gap              : 35px;
             width            : auto;
             height           : 20px;
-            padding          : 5px;
+            padding          : 8px;
             margin-top       : 8px;
             font-size        : 18px;
             text-align       : center;
@@ -23,9 +23,13 @@ const NavBarStyle = styled.div`
 
         }
 
-        a:link, a:active, a:visited {
+        a:link, a:visited {
             text-decoration: none;
             color: black;
+        }
+
+        a:active {
+            color: red;
         }
 
         .navbar li:hover{
@@ -47,7 +51,7 @@ const NavBarStyle = styled.div`
             gap              : 35px;
             width            : 100%;
             height           : 20px;
-            padding          : 5px;
+            padding          : 8px;
             margin-top       : 8px;
             font-size        : 18px;
             text-align       : center;
