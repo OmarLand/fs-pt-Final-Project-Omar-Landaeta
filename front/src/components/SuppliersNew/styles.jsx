@@ -8,8 +8,11 @@ const FormNewSuppliers = styled.div`
     flex-direction : column;
     color          : white;
     text-align     : center;
-    margin-top: 65px;
+    margin-top     : 65px;
     
+    h2{
+        text-shadow : 1px 1px 15px black;
+    }
 
     .headTitle{
         margin-top : -115px;
@@ -18,12 +21,12 @@ const FormNewSuppliers = styled.div`
 
     .input-text{
 
-        height: 28px; 
-        width : 250px;
-        margin-top: 10px;
-        border-radius: 15px;
-        box-shadow: 1px 1px 10px black;
-        text-align: center;
+        height        : 28px; 
+        width         : 250px;
+        margin-top    : 10px;
+        border-radius : 15px;
+        box-shadow    : 1px 1px 10px black;
+        text-align    : center;
     }
 
     .button-submit{
@@ -45,6 +48,10 @@ const FormNewSuppliers = styled.div`
     text-align     : center;
     margin-top     : 65px;
 
+    h2{
+        text-shadow : 1px 1px 15px black;
+    }
+
     .headTitle{
         margin-top : -115px;
         font-size  : 25px;
@@ -53,12 +60,12 @@ const FormNewSuppliers = styled.div`
     
     .input-text{
 
-        height: 28px; 
-        width : 250px;
-        margin-top: 10px;
-        border-radius: 15px;
-        box-shadow: 1px 1px 10px black;
-        text-align: center;
+        height        : 28px; 
+        width         : 250px;
+        margin-top    : 10px;
+        border-radius : 15px;
+        box-shadow    : 1px 1px 10px black;
+        text-align    : center;
     }
 
     .button-submit{

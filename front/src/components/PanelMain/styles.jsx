@@ -8,37 +8,39 @@ const PanelContain = styled.div`
     flex-direction : column;
     color          : white;
     text-align     : center;
+
+    h2{
+        text-shadow : 1px 1px 15px black;
+    }
     
 
     .headTitle{
         margin-top : 15px;
-        font-size  : 35px;
+        font-size  : 28px;
     }
 
     .dataProducts{
-        height: 63%;
-        max-width: 100%;
+        height    : 63%;
+        max-width : 100%;
         
     }
 
     table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        max-width: 100%;
+        font-family     : arial, sans-serif;
+        border-collapse : collapse;
+        max-width       : 100%;
     }
       
     td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
+        border     : 1px solid #dddddd;
+        text-align : left;
+        padding    : 8px;
     }
 
-    a:active, a:visited {
-        color: red;
-        font-weight: bold;
-    }
-    
-      
+    a:visited {
+        color       : black;
+        font-weight : bold;
+    }    
 
 
 }
@@ -49,6 +51,10 @@ const PanelContain = styled.div`
     flex-direction : column;
     color          : white;
     text-align     : center;
+
+    h2{
+        text-shadow : 1px 1px 15px black;
+    }
     
 
     .headTitle{
@@ -57,26 +63,26 @@ const PanelContain = styled.div`
     }
 
     .dataProducts{
-        height: 67%;
-        max-width: 100%;
+        height     : 67%;
+        max-width  : 100%;
         
     }
 
     table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        max-width: 100%;
+        font-family     : arial, sans-serif;
+        border-collapse : collapse;
+        max-width       : 100%;
       }
       
       td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
+        border      : 1px solid #dddddd;
+        text-align  : left;
+        padding     : 8px;
       }
 
       a:active, a:visited {
-        color: black;
-        font-weight: bold;
+        color       : black;
+        font-weight : bold;
     }
     
 

@@ -22,7 +22,6 @@ function App() {
 
           <Switch>
 
-
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
             <Route path="/panel" component={Panel} />
@@ -30,7 +29,6 @@ function App() {
             <Route path="/suppliersnew" component={SuppliersNew} />
             <Route path="/productsnew" component={NewProductsPage} />
             <Route path="/logOut" component={Modal} />
-
 
             <Redirect to="/login"/>
 

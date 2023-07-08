@@ -25,29 +25,24 @@ const NavBarStyle = styled.div`
         }
 
         .imgLogOut{
-            width: 22px;
+            width  : 22px;
         }
 
         a:link, a:visited {
-            text-decoration: none;
-            color: black;
+            text-decoration : none;
+            color           : black;
         }
 
         a:active {
-            color: red;
+            color           : red;
         }
-
-        .navbar li:hover{
-            color: gray;
-        }
-
     
     }
 
     @media screen, (min-width : 641px) {
 
         .navbar{
-            border: 1px solid black;
+            border           : 1px solid black;
             background-color : #9BD1E5;
             color            : black;
             display          : flex;

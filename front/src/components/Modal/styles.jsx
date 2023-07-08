@@ -13,11 +13,11 @@ const NavBarStyle = styled.div`
         text-shadow     : 1px 1px 8px black;
 
         p {
-            text-align: center;
+            text-align   : center;
         }
 
         form{
-            text-align: center;
+            text-align   : center;
         }
 
         .button-logout{
@@ -42,11 +42,11 @@ const NavBarStyle = styled.div`
         text-shadow     : 1px 1px 8px black;
 
         p {
-            text-align: center;
+            text-align   : center;
         }
 
         form{
-            text-align: center;
+            text-align   : center;
         }
 
         .button-logout{
@@ -60,8 +60,8 @@ const NavBarStyle = styled.div`
         
         .button-logout:hover{
 
-            background-color: #4E6E5D;
-            color: white;
+            background-color : #4E6E5D;
+            color            : white;
     
         }
 
