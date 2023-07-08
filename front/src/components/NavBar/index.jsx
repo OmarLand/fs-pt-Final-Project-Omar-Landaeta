@@ -1,4 +1,5 @@
 import Styled from './styles';
+import { Link } from 'wouter';
 
 const NavBar = ( { links } ) => {
     return(
@@ -6,10 +7,10 @@ const NavBar = ( { links } ) => {
             <Styled.NavBarStyle>
 
                 <ul className="navbar">
-                    {/* <li> <img src="https://uploads-ssl.webflow.com/60780bff57ddc42a6adc1d7e/607eeb4b0517b6659206c10f_thebridgelogo.svg" className="imgLogo"></img> </li> */}
                     { links.map( (link,index) =>(
-                    <li key={index}> {link} </li>
-                    ))}
+                        <li key={index}> {link} </li>
+                        ))} 
+                    <li> <Link href="/logout"><a className='links-styled'> <img src="https://www.vhv.rs/file/max/4/44780_logout-icon-png.png" className="imgLogOut"></img>  </a></Link> </li>
                 </ul>
 
             </Styled.NavBarStyle>

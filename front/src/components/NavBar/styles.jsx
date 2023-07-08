@@ -16,11 +16,16 @@ const NavBarStyle = styled.div`
             height           : 20px;
             padding          : 8px;
             margin-top       : 8px;
+            margin-left      : -10px;
             font-size        : 18px;
             text-align       : center;
             box-shadow       : 1px 1px 10px black;
             border-radius    : 9px;
 
+        }
+
+        .imgLogOut{
+            width: 22px;
         }
 
         a:link, a:visited {
@@ -59,6 +64,7 @@ const NavBarStyle = styled.div`
             border-radius    : 9px;
 
         }
+
 
         .navbar li:hover{
             color: gray;

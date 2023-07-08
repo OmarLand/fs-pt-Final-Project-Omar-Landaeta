@@ -4,6 +4,7 @@ import { Link } from 'wouter';
 
 import NavBar from '../../components/NavBar';
 import Title from '../Title';
+import UserName from '../UserName';
 
 const NewSuppliers = () => {
 
@@ -20,7 +21,11 @@ const NewSuppliers = () => {
 
                 <Title title = 'App de Gestión'/>
 
+                <UserName/>
+
                 <NavBar links = {links} />
+
+                <h2>Registro de proveedores:</h2>
 
                 <form>
 
@@ -33,7 +38,7 @@ const NewSuppliers = () => {
                     <input className='input-text' type="text" placeholder='Descripción' name="description" id="description" />
                     <br />
 
-                    <input className='button-submit' type="submit" value="Grabar" />
+                    <input className='button-submit' type="submit" value="Registrar" />
                     <input className='button-submit' type="button" value="Volver" />
 
                    {/* <div className='button-submit'>

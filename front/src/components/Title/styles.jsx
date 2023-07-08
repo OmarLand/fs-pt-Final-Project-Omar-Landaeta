@@ -12,7 +12,7 @@ const LogContain = styled.div`
 
     .headTitle{
         margin-top : 15px;
-        font-size  : 35px;
+        font-size  : 28px;
     }
 
 }
@@ -27,7 +27,7 @@ const LogContain = styled.div`
 
     .headTitle{
         margin-top : 15px;
-        font-size  : 35px;
+        font-size  : 25px;
     }
 
 }

@@ -10,6 +10,7 @@ import Panel from './pages/Panel/index.jsx';
 import Suppliers from './pages/Suppliers/index.jsx';
 import SuppliersNew from './pages/SuppliersNew/index.jsx';
 import NewProductsPage from './pages/ProductsNew/index.jsx';
+import Modal from './pages/Modal/index.jsx';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/suppliers" component={Suppliers} />
             <Route path="/suppliersnew" component={SuppliersNew} />
             <Route path="/productsnew" component={NewProductsPage} />
+            <Route path="/logOut" component={Modal} />
 
 
             <Redirect to="/login"/>

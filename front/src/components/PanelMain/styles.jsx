@@ -53,7 +53,7 @@ const PanelContain = styled.div`
 
     .headTitle{
         margin-top : 15px;
-        font-size  : 35px;
+        font-size  : 25px;
     }
 
     .dataProducts{
@@ -75,7 +75,7 @@ const PanelContain = styled.div`
       }
 
       a:active, a:visited {
-        color: red;
+        color: black;
         font-weight: bold;
     }
     

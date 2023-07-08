@@ -4,6 +4,7 @@ import Styled from './styles';
 
 import Title from '../../components/Title';
 import NavBar from '../NavBar';
+import UserName from '../UserName';
 
 
 const links = [
@@ -21,8 +22,12 @@ const NewProductsForm = () => {
 
                 <Title className="headTitle" title='App de Gestión'/>
 
+                <UserName/>
+
                 <NavBar links = {links} />
 
+                <h2>Registro de productos:</h2>
+                
                 <form>
 
                     <input className="input-text" placeholder='Cod. Artículo' type="text" name="cod_art" id="cod_art " />

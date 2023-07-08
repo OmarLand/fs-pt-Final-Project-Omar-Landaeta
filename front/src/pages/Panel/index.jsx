@@ -2,6 +2,7 @@ import { Link } from 'wouter';
 
 import Styled from '../../components/PanelMain/styles';
 import Title from "../../components/Title";
+import UserName from "../../components/UserName";
 
 import PanelContainer from '../../components/PanelMain';
 import NavBar from '../../components/NavBar';
@@ -12,6 +13,8 @@ const links = [
     <Link href="/productsnew"><a className='links-styled'> Transacciones </a></Link>, 
 ];
 
+
+
 const PanelMain = () => {
 
     return(
@@ -19,6 +22,9 @@ const PanelMain = () => {
             <Styled.PanelContain>   
              
                 <Title title='App de Gestión'/>
+
+                <UserName/>
+
                 <NavBar links = {links}/>
                 
                 <PanelContainer/>

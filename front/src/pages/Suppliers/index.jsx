@@ -4,6 +4,7 @@ import Styled from '../../components/PanelMain/styles';
 import Title from "../../components/Title";
 import NavBar from '../../components/NavBar';
 import SuppliersList from '../../components/FormSuppliers';
+import UserName from '../../components/UserName';
 
 const links = [
     <Link href="/panel"><a className='links-styled'> Inicio </a></Link>, 
@@ -20,6 +21,9 @@ const PanelSuppliers = () => {
             <Styled.PanelContain>   
              
                 <Title title='App de Gestión'/>
+
+                <UserName/>
+
                 <NavBar links = {links}/>
 
 

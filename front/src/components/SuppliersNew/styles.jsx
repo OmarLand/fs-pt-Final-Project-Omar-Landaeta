@@ -13,7 +13,7 @@ const FormNewSuppliers = styled.div`
 
     .headTitle{
         margin-top : -115px;
-        font-size  : 35px;
+        font-size  : 28px;
     }
 
     .input-text{
@@ -47,7 +47,7 @@ const FormNewSuppliers = styled.div`
 
     .headTitle{
         margin-top : -115px;
-        font-size  : 35px;
+        font-size  : 25px;
     }
 
     
