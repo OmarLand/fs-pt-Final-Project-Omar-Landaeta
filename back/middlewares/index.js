@@ -1,7 +1,7 @@
 const authorizer = require( './authorizer' );
-const validator = require( './fieldsValidator' );
+const fieldsValidator = require( './fieldsValidator' );
 
 module.exports = {
     authorizer,
-    validator,
+    fieldsValidator,
 }

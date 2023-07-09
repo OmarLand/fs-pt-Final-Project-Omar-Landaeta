@@ -13,8 +13,8 @@ const NewSuppliers = () => {
 
     // const history = useHistory();
 
-    // const handleButtonClick = () => {
-    //     history.push('/suppliers');
+    // const handleGoBack = () => {
+    //     history.goBack();
     //   };
       
 
@@ -50,7 +50,7 @@ const NewSuppliers = () => {
                     <br />
 
                     <input className='button-submit' type="submit" value="Registrar" />
-                    <input className='button-submit' type="button" value="Volver"  />
+                    <input className='button-submit' type="button" value="Volver" />
 
                    {/* <div className='button-submit'>
                         <Link href="/suppliers" > <a>Volver</a> </Link>
