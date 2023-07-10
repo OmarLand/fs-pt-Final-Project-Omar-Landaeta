@@ -4,6 +4,7 @@ import './App.css';
 import { Switch, Route, Redirect } from 'wouter';
 
 //Paginas importadas
+import Provider from './context/Provider.jsx';
 import Login from './pages/Login/index.jsx';
 import Register from './pages/Register/index.jsx';
 import Panel from './pages/Panel/index.jsx';
@@ -20,19 +21,24 @@ function App() {
       <Styled.MainContain>
         <Styled.ContainerPage>
 
-          <Switch>
+          <Provider>
 
-            <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />
-            <Route path="/panel" component={Panel} />
-            <Route path="/suppliers" component={Suppliers} />
-            <Route path="/suppliersnew" component={SuppliersNew} />
-            <Route path="/productsnew" component={NewProductsPage} />
-            <Route path="/logOut" component={Modal} />
+            <Switch>
 
-            <Redirect to="/login"/>
+              <Route path="/login" component={Login} />
+              <Route path="/register" component={Register} />
+              <Route path="/panel" component={Panel} />
+              <Route path="/suppliers" component={Suppliers} />
+              <Route path="/suppliersnew" component={SuppliersNew} />
+              <Route path="/productsnew" component={NewProductsPage} />
+              <Route path="/logOut" component={Modal} />
 
-          </Switch>
+              <Redirect to="/login"/>
+
+            </Switch>
+
+          </Provider>
+
 
         </Styled.ContainerPage>
       </Styled.MainContain>
