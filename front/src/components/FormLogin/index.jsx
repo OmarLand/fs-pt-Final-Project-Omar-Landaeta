@@ -1,28 +1,29 @@
 import Styled from './styles.jsx';
-
 import { useForm } from 'react-hook-form';
-
-import { login } from '../../misc/templates.js'
+import { login } from '../../misc/templates.js';
+import { useLogin } from '../../hooks';
 
 const FormLogin = () => {
 
-
     const { register, formState, handleSubmit } = useForm();
 
-    const handleForm = ( data ) => {
-        // EventTarget.preventDefault();
-        console.info('Form data: ===>', data);
-    }
+    const doLogin = useLogin();
+
+    // const handleForm = ( data ) => {
+    //     console.info('Form data: ===>', data);
+    //     mutate( data );
+    // }
 
     console.info('Form State: ===> ', formState );
+    
+    const { errors, email, username, password } = login;
 
-    const { errors, email, username, password } = login
  
     return (
         <>
             <Styled.Form>
                 
-                <form onSubmit={ handleSubmit(handleForm) }>
+                <form onSubmit={ handleSubmit(doLogin) }>
 
                     <input className="input-text" required type="email" placeholder="e-mail" {...register("email", { required: true })} />
                     <br />

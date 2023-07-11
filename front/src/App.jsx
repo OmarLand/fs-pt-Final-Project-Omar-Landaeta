@@ -15,36 +15,35 @@ import Modal from './pages/Modal/index.jsx';
 
 function App() {
 
-  return (
+  return(
+
     <>
 
-      <Styled.MainContain>
-        <Styled.ContainerPage>
+      <Provider>
+        <Styled.MainContain>
+          <Styled.ContainerPage>
+            
+              <Switch>
 
-          <Provider>
+                <Route path="/login" component={Login} />
+                <Route path="/register" component={Register} />
+                <Route path="/panel" component={Panel} />
+                <Route path="/suppliers" component={Suppliers} />
+                <Route path="/suppliersnew" component={SuppliersNew} />
+                <Route path="/productsnew" component={NewProductsPage} />
+                <Route path="/logOut" component={Modal} />
 
-            <Switch>
+                <Redirect to="/login"/>
 
-              <Route path="/login" component={Login} />
-              <Route path="/register" component={Register} />
-              <Route path="/panel" component={Panel} />
-              <Route path="/suppliers" component={Suppliers} />
-              <Route path="/suppliersnew" component={SuppliersNew} />
-              <Route path="/productsnew" component={NewProductsPage} />
-              <Route path="/logOut" component={Modal} />
+              </Switch>
 
-              <Redirect to="/login"/>
-
-            </Switch>
-
-          </Provider>
-
-
-        </Styled.ContainerPage>
-      </Styled.MainContain>
+          </Styled.ContainerPage>
+        </Styled.MainContain>
+      </Provider>
 
     </>
   )
+  
 }
 
 export default App
