@@ -12,7 +12,7 @@ module.exports = (db) => async( req, res, next ) => {
 
     if( !dbRes.ok ) return next( errors[dbRes.error_code || 500 ] );
     dbRes.content; // contenido del username
-    console.log( '===>', dbRes.content )
+    // console.log( '===>', dbRes.content )
 
     serialize(res, dbRes);
 

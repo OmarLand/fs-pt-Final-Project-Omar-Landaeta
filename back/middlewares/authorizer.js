@@ -5,7 +5,7 @@ module.exports = ( req, res, next ) => {
 
     const payload = deserialize(req);
 
-    console.info('=> PAYLOAD ==', payload);
+    // console.info('=> PAYLOAD ==', payload);
 
     if(!payload) return next( errors.timeout_access );
 

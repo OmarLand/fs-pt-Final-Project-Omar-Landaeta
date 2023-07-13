@@ -1,8 +1,8 @@
 export const login = ( client ) => async( params ) => {
     try {
 
-        const { data } = await client.post('/auth/signin/', params)
-        console.info('===> Login data: ', data);
+        const { data } = await client.post('/auth/signin', params)
+        console.info('===> Login Auth data: ', data);
         return data;
     
     } catch (error) {

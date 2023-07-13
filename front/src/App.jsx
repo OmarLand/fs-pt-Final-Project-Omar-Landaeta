@@ -12,6 +12,7 @@ import Suppliers from './pages/Suppliers/index.jsx';
 import SuppliersNew from './pages/SuppliersNew/index.jsx';
 import NewProductsPage from './pages/ProductsNew/index.jsx';
 import Modal from './pages/Modal/index.jsx';
+import Guard from './components/Guard/index.jsx';
 
 function App() {
 
@@ -27,7 +28,10 @@ function App() {
 
                 <Route path="/login" component={Login} />
                 <Route path="/register" component={Register} />
-                <Route path="/panel" component={Panel} />
+                <Route path="/panel">
+                  <Guard component={Panel} />
+                </Route>
+                {/* <Route path="/panel" component={Panel} /> */}
                 <Route path="/suppliers" component={Suppliers} />
                 <Route path="/suppliersnew" component={SuppliersNew} />
                 <Route path="/productsnew" component={NewProductsPage} />

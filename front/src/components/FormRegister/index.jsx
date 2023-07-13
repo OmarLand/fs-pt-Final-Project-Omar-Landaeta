@@ -12,8 +12,6 @@ const FormRegister = () => {
                 <br />
                 <input className='submitButton' type="submit" value="Registrar"/>
             </Styled.FormRegisterStyle>
-
-        
         </>
     );
 }

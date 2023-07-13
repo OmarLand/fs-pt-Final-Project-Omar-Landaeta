@@ -1,10 +1,10 @@
+
 import { QueryClientProvider, QueryClient } from 'react-query';
 
 const queryClient = new QueryClient();
 
 const Provider = ({children}) => {
-    return(
-
+    return (
         <QueryClientProvider client={ queryClient } >
             {children}
         </QueryClientProvider>
