@@ -10,7 +10,7 @@ const insertUser = ( user, email, password ) => sql.unsafe`
 `
 
 const selectByEmail = ( email ) => sql.unsafe`
-        SELECT email, password
+        SELECT email, username, password
         FROM users
         WHERE email LIKE ${email}
 `

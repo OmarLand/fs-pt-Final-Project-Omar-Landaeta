@@ -1,18 +1,12 @@
-const { deserialize } = require('simple-stateless-auth-library');
-const errors = require('../misc/errors');
+const { deserialize } = require('simple-stateless-auth-library')
+const errors = require('../misc/errors')
 
-module.exports = ( req, res, next ) => {
+module.exports = (strict = true) => (req, res, next) => {
+    const payload = deserialize(req)
 
-    const payload = deserialize(req);
+    if(strict && !payload) return next(errors.timeout_access)
 
-    // console.info('=> PAYLOAD ==', payload);
+    res.locals.user = payload || {}
 
-    if(!payload) return next( errors.timeout_access );
-
-    res.locals = payload;
-
-    // console.info( '>>> 100% Seguro xD' );
-
-    next();
-
+    next()
 }

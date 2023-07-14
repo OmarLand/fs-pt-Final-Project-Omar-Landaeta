@@ -11,6 +11,7 @@ module.exports = (db) => async( req, res, next ) => {
     const dbRes = await selectUser(await db)(email, hash.compare(password));
 
     if( !dbRes.ok ) return next( errors[dbRes.error_code || 500 ] );
+    
     dbRes.content; // contenido del username
     // console.log( '===>', dbRes.content )
 

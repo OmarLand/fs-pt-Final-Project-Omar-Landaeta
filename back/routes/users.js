@@ -5,7 +5,7 @@ const usersController = require('../controllers/users');
 
 
 module.exports = ( db ) => {
-    router.get( '/', authorizer, usersController.getUsers() );
+    router.get( '/', authorizer(), usersController.getUsers() );
 
 
     return router;

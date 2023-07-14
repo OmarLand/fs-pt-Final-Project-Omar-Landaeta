@@ -1,23 +1,19 @@
 import Styled from './styles.jsx';
 import { login } from '../../misc/templates.js';
 import { useLogin, useUser } from '../../hooks'; // Gestiono el login
-// import { user } from '../../services';
-// import { useQuery } from 'react-query' // Gestiono redireccion a panel
+
 import { useForm } from 'react-hook-form';
 import { useEffect } from 'react';
-import { useLocation } from 'wouter';
 
 
 const FormLogin = () => {
 
     const { register, formState, handleSubmit } = useForm();
-    const doLogin = useLogin(); // Para el Login
-    const [, setLocation ] = useLocation();
+    const doLogin  = useLogin(); // Para el Login
     const { data } = useUser();
 
     useEffect( ()=>{
         console.info('> useEffect User data ==> ', data)
-        // data && setLocation('/panel')
     }, [data]);
 
     // const handleForm = ( data ) => {
@@ -28,7 +24,6 @@ const FormLogin = () => {
     
     const { errors } = login;
 
- 
     return (
         <>
             <Styled.Form>

@@ -1,7 +1,9 @@
+const PATH = "/auth";
+
 export const login = ( client ) => async( params ) => {
     try {
 
-        const { data } = await client.post('/auth/signin', params)
+        const { data } = await client.post(`${PATH}/signin`, params)
         console.info('===> Login Auth data: ', data);
         return data;
     
