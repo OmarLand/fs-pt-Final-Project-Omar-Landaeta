@@ -28,10 +28,10 @@ function App() {
 
                 <Route path="/login" component={Login} />
                 <Route path="/register" component={Register} />
-                <Route path="/panel">
+                {/* <Route path="/panel">
                   <Guard component={Panel} />
-                </Route>
-                {/* <Route path="/panel" component={Panel} /> */}
+                </Route> */}
+                <Route path="/panel" component={Panel} />
                 <Route path="/suppliers" component={Suppliers} />
                 <Route path="/suppliersnew" component={SuppliersNew} />
                 <Route path="/productsnew" component={NewProductsPage} />

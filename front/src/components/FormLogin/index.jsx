@@ -17,7 +17,7 @@ const FormLogin = () => {
 
     useEffect( ()=>{
         console.info('> useEffect User data ==> ', data)
-        data && setLocation('/panel')
+        // data && setLocation('/panel')
     }, [data]);
 
     // const handleForm = ( data ) => {
