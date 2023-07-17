@@ -13,6 +13,11 @@ const links = [
     <Link href="/productsnew"><a className='links-styled'> Transacciones </a></Link>, 
 ];
 
+const goBack = () => {
+    window.history.back();
+};
+
+
 const NewProductsForm = () => {
     return(
 
@@ -30,16 +35,53 @@ const NewProductsForm = () => {
                 
                 <form>
 
-                    <input className="input-text" placeholder='Cod. Artículo' type="text" name="cod_art" id="cod_art " />
+                    <input 
+                        className="input-text" 
+                        placeholder='Cod. Artículo' 
+                        type="text" 
+                        name="cod_art" 
+                        id="cod_art " 
+                    />
                     <br />
-                    <input className="input-text" placeholder='Nombre del artículo' type="text" name="name_art" id="name_art " />
+                    
+                    <input 
+                        className="input-text" 
+                        placeholder='Nombre del artículo' 
+                        type="text" 
+                        name="name_art" 
+                        id="name_art " 
+                    />
                     <br />
-                    <input className="input-text" placeholder='Descripción del artículo' type="text" name="desc_art" id="desc_art " />
+                    
+                    <input 
+                        className="input-text" 
+                        placeholder='Descripción del artículo' 
+                        type="text" 
+                        name="desc_art" 
+                        id="desc_art " 
+                    />
                     <br />
-                    <input className="input-text" placeholder='Cant. Artículo' type="text" name="quant_art" id="quant_art " />
+                    
+                    <input 
+                        className="input-text" 
+                        placeholder='Cant. Artículo' 
+                        type="text" 
+                        name="quant_art" 
+                        id="quant_art " 
+                    />
                     <br />
-                    <input className='button-submit' type="submit" value="Registrar" />
-                    <input className='button-submit' type="submit" value="Volver" />
+                    
+                    <input 
+                        className='button-submit' 
+                        type="submit" 
+                        value="Registrar" 
+                    />
+                    <input 
+                        className='button-submit' 
+                        type="button" 
+                        value="Volver" 
+                        onClick={ goBack }
+                    />
                
                </form>
 

@@ -11,19 +11,17 @@ import UserName from '../UserName';
 
 const NewSuppliers = () => {
 
-    // const history = useHistory();
-
-    // const handleGoBack = () => {
-    //     history.goBack();
-    //   };
-      
-
 
     const links = [
         <Link href="/panel">      <a className='links-styled'> Inicio </a></Link>, 
         <Link href="/suppliers">  <a className='links-styled'> Proveedores </a></Link>,
         <Link href="/productsnew"><a className='links-styled'> Transacciones </a></Link>, 
     ];
+
+    const goBack = () => {
+        window.history.back();
+    };
+
 
 
     return(
@@ -49,8 +47,17 @@ const NewSuppliers = () => {
                     <input className='input-text' type="text" placeholder='Descripción' name="description" id="description" />
                     <br />
 
-                    <input className='button-submit' type="submit" value="Registrar" />
-                    <input className='button-submit' type="button" value="Volver" />
+                    <input 
+                        className='button-submit' 
+                        type="submit" 
+                        value="Registrar" 
+                    />
+                    <input 
+                        className='button-submit' 
+                        type="button" 
+                        value="Volver"
+                        onClick={ goBack } 
+                    />
 
                    {/* <div className='button-submit'>
                         <Link href="/suppliers" > <a>Volver</a> </Link>

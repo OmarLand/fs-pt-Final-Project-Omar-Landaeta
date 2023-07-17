@@ -2,9 +2,14 @@ import Styled from './styles';
 
 import { useLogOut } from '../../hooks/';
 
-const ModalContent = ( ) => {
 
-    const doLogOut = useLogOut();;
+const ModalContent = ( ) => {
+    
+    const doLogOut = useLogOut();
+
+    const goBack = () => {
+        window.history.back();
+    };
 
     return(
 
@@ -25,7 +30,8 @@ const ModalContent = ( ) => {
                         className='button-logout' 
                         type="button" 
                         value="Nop!" 
-                        onClick={ () => console.log('Volver volver volver....') }
+                        onClick={ goBack }
+                        // onClick={ () => console.log('Volver volver volver....') }
                     />
                 </form>
 
