@@ -14,3 +14,16 @@ export const login = ( client ) => async( params ) => {
         
     }
 }
+
+// Registro de nuevo usuario:
+export const register = ( client ) => async( params ) => {
+
+    try {
+        const { data } = await client.post(`${PATH}/signup`, params);
+        console.info('===> [Service] Registrando Data Usuario : ', data);
+        return data;
+    } catch (error) {
+        console.info('===> [Service] Error al registrar usuario: ', error.message );
+        return { success: false }
+    }
+}

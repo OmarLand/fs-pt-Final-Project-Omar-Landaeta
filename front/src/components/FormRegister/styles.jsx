@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-const FormRegisterStyle = styled.form`
+const FormRegisterStyle = styled.div`
 
         
     @media screen and (max-width : 640px) {

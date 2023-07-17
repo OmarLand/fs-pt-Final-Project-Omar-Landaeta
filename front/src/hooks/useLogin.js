@@ -1,11 +1,10 @@
 import { useMutation, useQueryClient } from 'react-query'
-import { auth } from '../services';
 import { useLocation } from 'wouter'
+import { auth } from '../services';
 
 export const useLogin = () => {
-    const [, setLocation] = useLocation();
-
     const queryClient = useQueryClient();
+    const [, setLocation] = useLocation();
 
     const { mutate } = useMutation({
         mutationFn : auth.login,
@@ -19,4 +18,5 @@ export const useLogin = () => {
     });
 
     return mutate;
+    // return { register, login };
 };
