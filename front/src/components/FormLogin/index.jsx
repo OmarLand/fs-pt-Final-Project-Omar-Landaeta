@@ -16,12 +16,6 @@ const FormLogin = () => {
         console.info('> useEffect User data ==> ', data)
     }, [data]);
 
-    // const handleForm = ( data ) => {
-    //     console.info('Form data: ===>', data);
-    //     mutate( data );
-    // }
-    // console.info('Form State: ===> ', formState );
-    
     const { errors } = login;
 
     return (

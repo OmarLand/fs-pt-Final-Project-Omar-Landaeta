@@ -1,4 +1,4 @@
 export { useLogin } from './useLogin';
-export { useUser } from './useUser';
+export { useUser }  from './useUser';
 export { useRegister } from './useRegister';
-export { useLogOut } from './useLogOut';
+export { useLogOut }   from './useLogOut';

@@ -1,9 +1,10 @@
-import { useLogOut } from '../../hooks/useLogOut';
 import Styled from './styles';
+
+import { useLogOut } from '../../hooks/';
 
 const ModalContent = ( ) => {
 
-    const { logout } = useLogOut();
+    const doLogOut = useLogOut();;
 
     return(
 
@@ -14,9 +15,9 @@ const ModalContent = ( ) => {
                 <form>
                     <input 
                         className='button-logout' 
-                        type="submit" 
+                        type="button" 
                         value="Sip!" 
-                        onSubmit={ logout }
+                        onClick={ doLogOut }
                     />
 
                     <input
@@ -24,7 +25,7 @@ const ModalContent = ( ) => {
                         className='button-logout' 
                         type="button" 
                         value="Nop!" 
-
+                        onClick={ () => console.log('Volver volver volver....') }
                     />
                 </form>
 
