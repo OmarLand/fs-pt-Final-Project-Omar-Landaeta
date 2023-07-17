@@ -27,3 +27,17 @@ export const register = ( client ) => async( params ) => {
         return { success: false }
     }
 }
+
+// Para hacer LogOut
+export const logout = (client) => async () => {
+    try {
+      const { data } = await client.post(`${PATH}/signout`);
+      console.info('> Eliminando la cookie correctamente <');
+      return data
+    } catch (error) {
+      console.info(">> Error [logout]: ", error.message);
+      return {
+        success: false,
+      };
+    }
+  };

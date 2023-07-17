@@ -6,7 +6,7 @@ export const useLogin = () => {
     const queryClient = useQueryClient();
     const [, setLocation] = useLocation();
 
-    const { mutate } = useMutation({
+    const { mutate : login } = useMutation({
         mutationFn : auth.login,
         onSuccess: ( data ) =>{
             console.info('=> Hook Mutation Response: ', data);
@@ -17,6 +17,6 @@ export const useLogin = () => {
         },
     });
 
-    return mutate;
-    // return { register, login };
+    return login;
+    // return mutate;
 };

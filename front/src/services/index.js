@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { login, register } from "./auth";
+import { login, register, logout } from "./auth";
 import { info } from "./user";
 
 
@@ -11,6 +11,7 @@ const client = axios.create({
 const auth = {
     login    : login( client ),
     register : register( client ),
+    logout   : logout(client),
 };
 
 const user = {

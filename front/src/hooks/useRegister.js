@@ -3,17 +3,18 @@ import { useLocation } from 'wouter'
 import { auth } from '../services';
 
 export const useRegister = () => {
+    
     const queryClient = useQueryClient();
     const [, setLocation] = useLocation();
 
-    const { mutate } = useMutation({
+    const { mutate : register} = useMutation({
         mutationFn : auth.register,
         onSuccess  : (data) => {
             if( data.success ) setLocation('/login');
-            console.info(" => Registrado correctamente! <= ");
+            console.info(" => Usuario Registrado correctamente! <= ");
         },
     });
 
-    return mutate;
+    return register;
 
 };

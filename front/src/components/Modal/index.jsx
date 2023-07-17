@@ -1,6 +1,10 @@
+import { useLogOut } from '../../hooks/useLogOut';
 import Styled from './styles';
 
-const ModalContent = () => {
+const ModalContent = ( ) => {
+
+    const { logout } = useLogOut();
+
     return(
 
         <>
@@ -8,9 +12,22 @@ const ModalContent = () => {
                 <p>¿Desea cerrar la sesión del App de Gestión?</p>
 
                 <form>
-                    <input className='button-logout' type="button" value="Sip!" />
-                    <input className='button-logout' type="button" value="Nop!" />
+                    <input 
+                        className='button-logout' 
+                        type="submit" 
+                        value="Sip!" 
+                        onSubmit={ logout }
+                    />
+
+                    <input
+                        name="logout" 
+                        className='button-logout' 
+                        type="button" 
+                        value="Nop!" 
+
+                    />
                 </form>
+
             </Styled.NavBarStyle>
         </>
 
