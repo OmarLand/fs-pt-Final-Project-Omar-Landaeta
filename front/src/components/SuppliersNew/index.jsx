@@ -1,50 +1,73 @@
 //importacion de estilos y librerias
 import Styled   from './styles';
 import { Link } from 'wouter';
-// import { useHistory } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
 
 
 // importacion de mis componentes
 import NavBar   from '../../components/NavBar';
 import Title    from '../Title';
 import UserName from '../UserName';
+import { useSupReg } from '../../hooks/useSupReg';
 
 const NewSuppliers = () => {
 
-
+    // Links para navegación del NavBar
     const links = [
         <Link href="/panel">      <a className='links-styled'> Inicio </a></Link>, 
         <Link href="/suppliers">  <a className='links-styled'> Proveedores </a></Link>,
         <Link href="/productsnew"><a className='links-styled'> Transacciones </a></Link>, 
     ];
 
+    // Regresar a pagina anterior
     const goBack = () => {
         window.history.back();
     };
 
+    // Para gestión del formulario
+    const { register, formState, handleSubmit } = useForm();
 
+    const doRegisterSupplier = useSupReg();
 
     return(
         <>
             <Styled.FormNewSuppliers>
 
                 <Title title = 'App de Gestión'/>
-
                 <UserName/>
-
                 <NavBar links = {links} />
-
                 <h2>Registro de proveedores:</h2>
 
-                <form>
+                <form onSubmit={ handleSubmit( doRegisterSupplier ) }>
 
-                    <input className='input-text' type="text" placeholder='Nombre Proveedor' name="name" id="name" />
+                    <input 
+                        className='input-text' 
+                        type="text"
+                        placeholder='Nombre Proveedor' 
+                        name="name_sup" 
+                        id="name_sup" 
+                        {...register("name_sup", {required : true})}
+                    />
                     <br />
 
-                    <input className='input-text' type="text" placeholder='Telef./Correo' name="contact" id="contact" />
+                    <input 
+                        className='input-text' 
+                        type="text" 
+                        placeholder='Telef./Correo' 
+                        name="contact_sup" 
+                        id="contact_sup" 
+                        {...register("contact_sup", {required : true})}
+                    />
                     <br />
 
-                    <input className='input-text' type="text" placeholder='Descripción' name="description" id="description" />
+                    <input 
+                        className='input-text' 
+                        type="text" 
+                        placeholder='Descripción'
+                        name="desc_sup" 
+                        id="desc_sup" 
+                        {...register("desc_sup", {required : true})}
+                    />
                     <br />
 
                     <input 
@@ -58,10 +81,6 @@ const NewSuppliers = () => {
                         value="Volver"
                         onClick={ goBack } 
                     />
-
-                   {/* <div className='button-submit'>
-                        <Link href="/suppliers" > <a>Volver</a> </Link>
-                    </div>  */}
 
                 </form>
 
