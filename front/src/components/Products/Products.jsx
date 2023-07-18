@@ -10,7 +10,7 @@ const Products = () => {
 
     return (    
         <> 
-            <Styled.DivProducts className='box extra'>
+            <Styled.DivProducts className='box'>
                 <table>
                     <thead className='head-text sticky-head'>
                         <tr>

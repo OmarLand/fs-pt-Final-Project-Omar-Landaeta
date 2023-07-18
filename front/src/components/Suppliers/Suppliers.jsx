@@ -10,9 +10,9 @@ const Suppliers = () => {
     return (
         <>
 
-            <Styled.DivSuppliers>
+            <Styled.DivSuppliers className='box'>
                 <table className='table-responsive'>
-                        <thead className='head-text'>
+                        <thead className='head-text sticky-head'>
                             <tr>
                                 <th>Nombre</th>
                                 <th>Contacto</th>
