@@ -10,14 +10,15 @@ const Products = () => {
 
     return (    
         <> 
-            <Styled.DivProducts>
-                <table className='table-responsive'>
-                    <thead className='head-text'>
+            <Styled.DivProducts className='box extra'>
+                <table>
+                    <thead className='head-text sticky-head'>
                         <tr>
                             <th>Nombre</th>
                             <th>Descripción</th>
                             <th>Stock</th>
                             <th>Proveedor</th>
+                            <th>Contacto</th>
                         </tr>
                     </thead>
 
@@ -29,7 +30,8 @@ const Products = () => {
                                         <td>{product.name_prod}</td>
                                         <td>{product.desc_prod}</td>
                                         <td>{product.quant_prod}</td>
-                                        <td>{product.name_sup_product}</td>
+                                        <td>{product.name_sup}</td>
+                                        <td>{product.contact_sup}</td>
                                     </tr>
                                 </>
                             )

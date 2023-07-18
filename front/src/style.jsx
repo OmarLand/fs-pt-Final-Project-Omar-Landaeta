@@ -25,6 +25,24 @@ const ContainerPage = styled.div`
             color                   : white;
             box-shadow              : 1px 1px 20px white;
 
+            // Controlo ocultar el Scrolling en productos cuando overflow
+            .box{
+                margin-top: -10px;
+                height : 370px;
+                overflow-y: scroll;
+            }
+
+            .box::-webkit-scrollbar {
+                display: none;
+            }
+            // FIN - Controlo ocultar el Scrolling en productos cuando overflow
+
+            .sticky-head{
+                position : sticky;
+                top: 0;
+                background-color: #546A7B;
+            }
+
             .goToRegister{
                 margin-top : 30px;
                 color      : white;
@@ -55,6 +73,24 @@ const ContainerPage = styled.div`
             color                   : white;
             box-shadow              : 1px 1px 20px white;
             margin-top              : -95px;
+
+            // Controlo ocultar el Scrolling en productos cuando overflow
+            .box{
+                margin-top: -10px;
+                height : 395px;
+                overflow-y: scroll;
+            }
+
+            .box::-webkit-scrollbar {
+                display: none;
+            }
+            // FIN - Controlo ocultar el Scrolling en productos cuando overflow
+
+            .sticky-head{
+                position : sticky;
+                top: 0;
+                background-color: #546A7B;
+            }
 
             .goToRegister{
                 margin-top : 30px;

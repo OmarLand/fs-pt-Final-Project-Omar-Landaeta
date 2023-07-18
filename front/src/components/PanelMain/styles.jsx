@@ -60,7 +60,7 @@ const PanelContain = styled.div`
             font-size  : 25px;
         }
 
-    
+   
 
         table {
             font-family     : arial, sans-serif;
