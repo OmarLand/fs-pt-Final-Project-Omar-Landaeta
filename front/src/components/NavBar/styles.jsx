@@ -49,10 +49,11 @@ const NavBarStyle = styled.div`
             justify-content  : center;
             list-style       : none;
             gap              : 35px;
-            width            : 100%;
+            width            : auto;
             height           : 20px;
             padding          : 8px;
             margin-top       : 8px;
+            margin-left: 1px;
             font-size        : 18px;
             text-align       : center;
             box-shadow       : 1px 1px 10px black;

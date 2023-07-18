@@ -1,6 +1,8 @@
 import Styled from './styles'
 import { Link } from 'wouter';
 
+import Suppliers from '../Suppliers/Suppliers';
+
 const SuppliersList = () => {
     return(
         <>
@@ -13,7 +15,9 @@ const SuppliersList = () => {
                         <Link href="/suppliersnew"><a>Registrar Proveedor</a></Link>
                     </div>
 
-                    <table className='dataSuppliers'>
+                    <Suppliers/>
+
+                    {/* <table className='dataSuppliers'>
                         <tr>
                             <th>Nombre</th>
                             <th>Contactos</th>
@@ -23,48 +27,8 @@ const SuppliersList = () => {
                             <td>Omar</td>
                             <td>99999999</td>
                             <td>Potencial</td>
-                        </tr>
-                        <tr>
-                            <td>Omar</td>
-                            <td>99999999</td>
-                            <td>Potencial</td>
-                        </tr>
-                        <tr>
-                            <td>Omar</td>
-                            <td>99999999</td>
-                            <td>Potencial</td>
-                        </tr>
-                        <tr>
-                            <td>Omar</td>
-                            <td>99999999</td>
-                            <td>Potencial</td>
-                        </tr>
-                        <tr>
-                            <td>Omar</td>
-                            <td>99999999</td>
-                            <td>Potencial</td>
-                        </tr>
-                        <tr>
-                            <td>Omar</td>
-                            <td>99999999</td>
-                            <td>Potencial</td>
-                        </tr>
-                        <tr>
-                            <td>Omar</td>
-                            <td>99999999</td>
-                            <td>Potencial</td>
-                        </tr>
-                        <tr>
-                            <td>Omar</td>
-                            <td>99999999</td>
-                            <td>Potencial</td>
-                        </tr>
-                        <tr>
-                            <td>Omar</td>
-                            <td>99999999</td>
-                            <td>Potencial</td>
-                        </tr>
-                    </table>
+                        </tr>                  
+                    </table> */}
 
                     
                 </form>

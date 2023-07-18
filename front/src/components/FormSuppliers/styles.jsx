@@ -44,6 +44,7 @@ const SuppliersList = styled.div`
             background-color : #C4CAD0;
             padding          : 5px;
             margin-bottom    : 15px;
+            margin-left       : 25px;
             border-radius    : 18px;
             box-shadow       : 1px 1px 10px black;
             
@@ -92,6 +93,7 @@ const SuppliersList = styled.div`
             background-color  : #C4CAD0;
             padding-top       : 5px;
             margin-bottom     : 15px;
+            margin-left       : 25px;
             border-radius     : 18px;
             box-shadow        : 1px 1px 10px black;
         }

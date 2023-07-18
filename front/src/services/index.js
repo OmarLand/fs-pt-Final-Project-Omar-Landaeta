@@ -2,7 +2,11 @@ import axios from 'axios';
 import { login, register, logout } from "./auth";
 import { info } from "./user";
 
+//Productos
 import { infoProd } from "./products"
+
+//Proveedores
+import { infoSup, registerSup } from "./suppliers"
 
 
 const client = axios.create({
@@ -24,5 +28,10 @@ const products = {
     infoProd : infoProd( client ),
 }
 
+const suppliers = {
+    infoSup : infoSup( client ),
+    registerSup : registerSup( client ),
+}
 
-export { auth, user, products };
+
+export { auth, user, products, suppliers };
