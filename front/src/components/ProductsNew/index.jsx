@@ -1,11 +1,13 @@
+import Styled from './styles';
 import { Link } from 'wouter';
 
-import Styled from './styles';
-
+// Importación de mis componentes
 import Title from '../../components/Title';
 import NavBar from '../NavBar';
 import UserName from '../UserName';
 
+import { useForm } from 'react-hook-form';
+import { useProdRed } from '../../hooks';
 
 const links = [
     <Link href="/panel"><a className='links-styled'> Inicio </a></Link>, 
@@ -19,6 +21,11 @@ const goBack = () => {
 
 
 const NewProductsForm = () => {
+
+    const { register, formState, handleSubmit } = useForm();
+
+    const doRegisterProd = useProdRed()
+
     return(
 
         <>
@@ -33,23 +40,25 @@ const NewProductsForm = () => {
 
                 <h2>Registro de productos:</h2>
                 
-                <form>
+                <form onSubmit={ handleSubmit( doRegisterProd ) }>
 
-                    <input 
+                    {/* <input 
                         className="input-text" 
                         placeholder='Cod. Artículo' 
                         type="text" 
                         name="cod_art" 
                         id="cod_art " 
+                        {...register("name_prod", { required:true })}
                     />
                     <br />
-                    
+                     */}
                     <input 
                         className="input-text" 
                         placeholder='Nombre del artículo' 
                         type="text" 
-                        name="name_art" 
-                        id="name_art " 
+                        name="name_prod" 
+                        id="name_prod" 
+                        {...register("name_prod", { required:true })}
                     />
                     <br />
                     
@@ -57,8 +66,9 @@ const NewProductsForm = () => {
                         className="input-text" 
                         placeholder='Descripción del artículo' 
                         type="text" 
-                        name="desc_art" 
-                        id="desc_art " 
+                        name="desc_prod	" 
+                        id="desc_prod"
+                        {...register("desc_prod", { required:true })}
                     />
                     <br />
                     
@@ -66,8 +76,19 @@ const NewProductsForm = () => {
                         className="input-text" 
                         placeholder='Cant. Artículo' 
                         type="text" 
-                        name="quant_art" 
-                        id="quant_art " 
+                        name="quant_prod" 
+                        id="quant_prod"
+                        {...register("quant_prod", { required:true })}
+                    />
+                    <br />
+
+                    <input 
+                        className="input-text" 
+                        placeholder='Proveedor existente' 
+                        type="text" 
+                        name="name_sup_product	" 
+                        id="name_sup_product	"
+                        {...register("name_sup_product", { required:true })}
                     />
                     <br />
                     

@@ -3,7 +3,7 @@ import { login, register, logout } from "./auth";
 import { info } from "./user";
 
 //Productos
-import { infoProd } from "./products"
+import { infoProd, registerProd } from "./products"
 
 //Proveedores
 import { infoSup, registerSup } from "./suppliers"
@@ -26,6 +26,7 @@ const user = {
 
 const products = {
     infoProd : infoProd( client ),
+    registerProd: registerProd( client ),
 }
 
 const suppliers = {
