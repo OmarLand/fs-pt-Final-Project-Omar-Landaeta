@@ -1,14 +1,23 @@
 require('dotenv').config();
+
 const express      = require('express');
 const db           = require('./configs/db');
 const app          = express();
 const cookieParser = require('cookie-parser');
 const errors       = require('./misc/errors');
 
+// Bloque para que CORS funcione
+const cors = require("cors");
+const options = require("./configs/cors");
+app.use(cors(options));
+
+const PORT = 3000;
+
 // Redirecciono mi atención a las rutas...
 const routes  = require( './routes' );
 
 const { cookie } = require('simple-stateless-auth-library');
+
 
 
 app.use( express.json() );
@@ -29,4 +38,7 @@ app.use( ({statusCode, error}, req, res, next) =>{
     });
 });
 
-app.listen( process.env.PORT, () => console.info(`===> Listening at ${process.env.PORT}`));
+app.listen( 
+    process.env.PORT, () => console.info(`===> Listening at ${PORT}`)
+);
+// app.listen( process.env.PORT, () => console.info(`===> Listening at ${process.env.PORT}`));

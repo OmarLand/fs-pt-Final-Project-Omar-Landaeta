@@ -42,22 +42,22 @@ const NavBarStyle = styled.div`
     @media screen, (min-width : 641px) {
 
         .navbar{
-            border           : 1px solid black;
+            border           : 2px solid black;
             background-color : #9BD1E5;
             color            : black;
             display          : flex;
-            justify-content  : center;
+            justify-content  : space-between;
             list-style       : none;
-            gap              : 35px;
+            gap              : 25px;
             width            : auto;
             height           : 20px;
-            padding          : 8px;
+            padding          : 10px;
             margin-top       : 8px;
-            margin-left: 1px;
-            font-size        : 18px;
+            margin-left      : 1px;
+            font-size        : 17px;
             text-align       : center;
             box-shadow       : 1px 1px 10px black;
-            border-radius    : 9px;
+            border-radius    : 20px;
 
         }
 

@@ -20,8 +20,8 @@ const ContainerPage = styled.div`
             -webkit-backdrop-filter : blur( 4px );
             border-radius           : 10px;
             border                  : 1px solid rgba( 255, 255, 255, 0.18 );
-            width                   : 65%;
-            height                  : 550px;
+            width                   : 70%;
+            height                  : 565px;
             color                   : white;
             box-shadow              : 1px 1px 20px white;
 
@@ -68,8 +68,8 @@ const ContainerPage = styled.div`
             -webkit-backdrop-filter : blur( 4px );
             border-radius           : 10px;
             border                  : 1px solid rgba( 255, 255, 255, 0.18 );
-            width                   : 55%;
-            height                  : 570px;
+            width                   : 60%;
+            height                  : 585px;
             color                   : white;
             box-shadow              : 1px 1px 20px white;
             margin-top              : -95px;

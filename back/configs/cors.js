@@ -1,5 +1,5 @@
 const errors = require('../misc/errors')
-const WHITELIST = ["localhost","127.0.0.1"]
+const WHITELIST = ["localhost"]
 
 module.exports = {
   origin: (origin, callback) => {

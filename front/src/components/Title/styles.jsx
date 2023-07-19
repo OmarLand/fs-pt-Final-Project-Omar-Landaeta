@@ -15,6 +15,10 @@ const LogContain = styled.div`
         font-size   : 28px;
         text-shadow : 1px 1px 15px black;
     }
+    
+    .secondTitle{
+        text-shadow : 1px 1px 10px black;
+    }
 
 }
 
@@ -31,6 +35,12 @@ const LogContain = styled.div`
         font-size   : 25px;
         text-shadow : 1px 1px 15px black;
     }
+
+    .secondTitle{
+        text-shadow : 1px 1px 10px black;
+    }
+
+
 
 }
 

@@ -9,6 +9,7 @@ const FormNewProductStyle = styled.div`
         color          : white;
         text-align     : center;
         margin-top     : 65px;
+        width          : 95%;
 
         h2{
             text-shadow : 1px 1px 15px black;
@@ -48,6 +49,7 @@ const FormNewProductStyle = styled.div`
         color          : white;
         text-align     : center;
         margin-top     : 65px;
+        width          : 95%;
 
         h2{
             text-shadow : 1px 1px 15px black;

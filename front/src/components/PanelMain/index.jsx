@@ -1,4 +1,4 @@
-import Styled from './styles.jsx';
+// import Styled from './styles.jsx';
 
 import Products from '../Products/Products.jsx';
 

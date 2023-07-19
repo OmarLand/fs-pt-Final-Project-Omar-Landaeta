@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useProducts } from '../../hooks';
 import Styled from './styles'
 
@@ -19,6 +19,7 @@ const Products = () => {
                             <th>Stock</th>
                             <th>Proveedor</th>
                             <th>Contacto</th>
+                          
                         </tr>
                     </thead>
 
@@ -32,6 +33,7 @@ const Products = () => {
                                         <td>{product.quant_prod}</td>
                                         <td>{product.name_sup}</td>
                                         <td>{product.contact_sup}</td>
+                                    
                                     </tr>
                                 </>
                             )

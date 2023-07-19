@@ -1,3 +1,5 @@
 const slonik = require('slonik');
 
-module.exports = slonik.createPool( process.env.DB_URL );
+// require('dotenv').config()
+
+module.exports = slonik.createPool( process.env.DATABASE_URL );

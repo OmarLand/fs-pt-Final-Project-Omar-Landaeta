@@ -1,17 +1,19 @@
 import axios from 'axios';
+
+// Users
 import { login, register, logout } from "./auth";
 import { info } from "./user";
 
-//Productos
-import { infoProd, registerProd } from "./products"
+// Productos
+import { infoProd, registerProd, editingProd, deleteProd } from "./products"
 
-//Proveedores
+// Proveedores
 import { infoSup, registerSup } from "./suppliers"
 
 
 const client = axios.create({
-    baseURL : import.meta.env.VITE_API_URL,
-    withCredentials: true,
+    baseURL         : import.meta.env.VITE_API_URL,
+    withCredentials : true,
 });
 
 const auth = {
@@ -21,17 +23,19 @@ const auth = {
 };
 
 const user = {
-    info : info(client),
+    info  : info(client),
 };
 
 const products = {
-    infoProd : infoProd( client ),
-    registerProd: registerProd( client ),
+    infoProd     : infoProd( client ),
+    registerProd : registerProd( client ),
+    editingProd  : editingProd( client ),
+    deleteProd   : deleteProd( client ),
 }
 
 const suppliers = {
-    infoSup : infoSup( client ),
-    registerSup : registerSup( client ),
+    infoSup      : infoSup( client ),
+    registerSup  : registerSup( client ),
 }
 
 

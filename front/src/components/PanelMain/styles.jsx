@@ -8,6 +8,7 @@ const PanelContain = styled.div`
         flex-direction : column;
         color          : white;
         text-align     : center;
+        width          : 95%;
 
         h2{
             text-shadow : 1px 1px 15px black;
@@ -40,7 +41,6 @@ const PanelContain = styled.div`
             font-weight : bold;
         }    
 
-
     }
 
     @media screen and (min-width : 641px) {
@@ -49,6 +49,7 @@ const PanelContain = styled.div`
         flex-direction : column;
         color          : white;
         text-align     : center;
+        width          : 95%;
 
         h2{
             text-shadow : 1px 1px 15px black;
@@ -60,7 +61,6 @@ const PanelContain = styled.div`
             font-size  : 25px;
         }
 
-   
 
         table {
             font-family     : arial, sans-serif;
@@ -80,8 +80,6 @@ const PanelContain = styled.div`
             color       : black;
             font-weight : bold;
         }
-        
-
     }
 
 `

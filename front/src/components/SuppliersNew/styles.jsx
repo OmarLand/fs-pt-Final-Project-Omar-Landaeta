@@ -9,6 +9,9 @@ const FormNewSuppliers = styled.div`
     color          : white;
     text-align     : center;
     margin-top     : 65px;
+    margin-left    : 3px;
+    width          : 98%;
+
     
     h2{
         text-shadow : 1px 1px 15px black;
@@ -47,6 +50,8 @@ const FormNewSuppliers = styled.div`
     color          : white;
     text-align     : center;
     margin-top     : 65px;
+    margin-left    : 5px;
+    width          : 97%;
 
     h2{
         text-shadow : 1px 1px 15px black;
