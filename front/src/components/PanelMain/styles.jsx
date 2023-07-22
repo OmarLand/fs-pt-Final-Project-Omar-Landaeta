@@ -21,14 +21,14 @@ const PanelContain = styled.div`
         }
 
 
-        table {
-            font-family     : arial, sans-serif;
-            border-collapse : collapse;
-            width           : 100%;
-            max-heigth      : 100%;
-            box-shadow      : 1px 1px 10px black;
-                
-        }
+        // table {
+        //     font-family     : arial, sans-serif;
+        //     border-collapse : collapse;
+        //     width           : 100%;
+        //     max-heigth      : 100%;
+        //     box-shadow      : 1px 1px 10px black;
+
+        // }
         
         td, th {
             border     : 1px solid #dddddd;

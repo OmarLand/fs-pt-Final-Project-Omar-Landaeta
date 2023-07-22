@@ -11,7 +11,7 @@ const Suppliers = () => {
         <>
 
             <Styled.DivSuppliers className='box'>
-                <table className='table-responsive'>
+                <table>
                         <thead className='head-text sticky-head'>
                             <tr>
                                 <th>Nombre</th>

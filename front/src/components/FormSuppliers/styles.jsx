@@ -22,7 +22,7 @@ const SuppliersList = styled.div`
         table {
             font-family      : arial, sans-serif;
             border-collapse  : collapse;
-            max-width        : 100%;
+            width            : 100%;
         }
 
         td, th {
@@ -38,13 +38,13 @@ const SuppliersList = styled.div`
         }
 
         .submit-Button{
-            width            : 275px;
+            width            : 250px;
             height           : 20px;
             color            : black;
             background-color : #C4CAD0;
             padding          : 5px;
             margin-bottom    : 25px;
-            margin-left       : 25px;
+            margin-left      : 5px;
             border-radius    : 18px;
             box-shadow       : 1px 1px 10px black;
             
@@ -93,7 +93,7 @@ const SuppliersList = styled.div`
             background-color  : #C4CAD0;
             padding-top       : 5px;
             margin-bottom     : 25px;
-            margin-left       : 25px;
+            margin-left       : auto;
             border-radius     : 18px;
             box-shadow        : 1px 1px 10px black;
         }
