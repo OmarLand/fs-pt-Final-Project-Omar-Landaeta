@@ -19,11 +19,11 @@ const client = axios.create({
 const auth = {
     login    : login( client ),
     register : register( client ),
-    logout   : logout(client),
+    logout   : logout( client ),
 };
 
 const user = {
-    info  : info(client),
+    info  : info( client ),
 };
 
 const products = {
