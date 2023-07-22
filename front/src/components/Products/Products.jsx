@@ -24,11 +24,11 @@ const Products = () => {
                     </thead>
 
                     <tbody>
-                        {productsInfo?.map( (product) => {
+                        {productsInfo?.map( (product, index) => {
                             return(
                                 <>
                                     <tr>
-                                        <td key="{product.id}">{product.name_prod}</td>
+                                        <td key="{index}">{product.name_prod}</td>
                                         <td>{product.desc_prod}</td>
                                         <td>{product.quant_prod}</td>
                                         <td>{product.name_sup}</td>

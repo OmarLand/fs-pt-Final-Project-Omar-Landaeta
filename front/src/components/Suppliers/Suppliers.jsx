@@ -21,11 +21,11 @@ const Suppliers = () => {
                         </thead>
 
                         <tbody>
-                            {suppliersInfo?.map( (supplier) => {
+                            {suppliersInfo?.map( (supplier, index) => {
                                 return(
                                     <>
                                         <tr>
-                                            <td key="{supplier.id}">{ supplier.name_sup }</td>
+                                            <td key="{index}">{ supplier.name_sup }</td>
                                             <td>{ supplier.contact_sup }</td>
                                             <td>{ supplier.desc_sup }</td>
                                         </tr>
