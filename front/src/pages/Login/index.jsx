@@ -4,6 +4,8 @@ import Title from "../../components/Title";
 import MainImage from '../../components/MainImage';
 import FormLogin from '../../components/FormLogin';
 
+import { Link } from 'wouter'
+
 
 const Login = () => {
 
@@ -20,7 +22,8 @@ const Login = () => {
                 <FormLogin />
 
                 <h3 className='goToRegister'>¿No estás registrado aún?</h3>
-                <a href="/register"> <h3 className='click-toRegister'>Click aqui para registrarte</h3> </a>
+
+                <Link href="/register"> <a> <h3 className='click-toRegister'>Click aqui para registrarte</h3> </a>  </Link>
 
             </Styled.LogContain>
         </>

@@ -28,7 +28,7 @@ const Products = () => {
                             return(
                                 <>
                                     <tr>
-                                        <td>{product.name_prod}</td>
+                                        <td key="{product.id}">{product.name_prod}</td>
                                         <td>{product.desc_prod}</td>
                                         <td>{product.quant_prod}</td>
                                         <td>{product.name_sup}</td>

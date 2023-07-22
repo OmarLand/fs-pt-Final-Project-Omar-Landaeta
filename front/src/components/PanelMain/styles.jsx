@@ -24,16 +24,16 @@ const PanelContain = styled.div`
         table {
             font-family     : arial, sans-serif;
             border-collapse : collapse;
-            max-width       : 100%;
+            width           : 100%;
             max-heigth      : 100%;
             box-shadow      : 1px 1px 10px black;
+                
         }
         
         td, th {
             border     : 1px solid #dddddd;
-            text-align : left;
-            padding    : 7px;
-
+            text-align : center;
+            padding    : 5px;
         }
 
         a:visited {
@@ -65,7 +65,7 @@ const PanelContain = styled.div`
         table {
             font-family     : arial, sans-serif;
             border-collapse : collapse;
-            max-width       : 100%;
+            width           : 100%;
             box-shadow      : 1px 1px 10px black;
             
         }

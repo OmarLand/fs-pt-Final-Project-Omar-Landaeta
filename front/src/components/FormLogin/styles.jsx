@@ -17,12 +17,12 @@ const Form = styled.div`
         .input-text{
             margin-top    : 5px;
             margin-bottom : 8px;
-            width         : 250px;
-            height        : 30px;
+            width         : 200px;
+            height        : 28px;
             text-align    : center;
-            font-size     : 18px; 
+            font-size     : 14px; 
             box-shadow    : 1px 1px 10px black;
-            border-radius : 10px;
+            border-radius : 15px;
         }
     
         .submitButton{
@@ -57,7 +57,7 @@ const Form = styled.div`
             text-align    : center;
             font-size     : 18px; 
             box-shadow    : 1px 1px 10px black;
-            border-radius : 10px;
+            border-radius : 15px;
         }
     
         .submitButton{

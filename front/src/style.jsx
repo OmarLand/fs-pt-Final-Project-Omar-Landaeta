@@ -4,7 +4,11 @@ const MainContain = styled.div`
 
     display         :flex;
     justify-content : center;
-    margin-top      : 170px;
+    margin-top      : 55px;
+
+    @media screen and (min-width : 641px) {
+        margin-top: 160px;
+    }
 
 `;
 
@@ -20,16 +24,16 @@ const ContainerPage = styled.div`
             -webkit-backdrop-filter : blur( 4px );
             border-radius           : 10px;
             border                  : 1px solid rgba( 255, 255, 255, 0.18 );
-            width                   : 70%;
+            width                   : 100%;
             height                  : 565px;
             color                   : white;
             box-shadow              : 1px 1px 20px white;
 
             // Controlo ocultar el Scrolling en productos cuando overflow
             .box{
-                margin-top: -10px;
-                height : 370px;
-                overflow-y: scroll;
+                margin-top : -10px;
+                height     : 370px;
+                overflow-y : scroll;
             }
 
             .box::-webkit-scrollbar {
@@ -58,7 +62,13 @@ const ContainerPage = styled.div`
                 font-size  : 15px;
             }
     }
+
     @media screen and (min-width : 641px) {
+
+
+            // display         :flex;
+            // justify-content : center;
+            // margin-top      : 100px;
 
             display                 : flex;
             justify-content         : center;

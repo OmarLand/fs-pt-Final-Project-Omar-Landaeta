@@ -12,7 +12,7 @@ const NavBarStyle = styled.div`
             justify-content  : center;
             list-style       : none;
             gap              : 35px;
-            width            : auto;
+            width            : 100%;
             height           : 20px;
             padding          : 8px;
             margin-top       : 8px;
@@ -46,15 +46,15 @@ const NavBarStyle = styled.div`
             background-color : #9BD1E5;
             color            : black;
             display          : flex;
-            justify-content  : space-between;
+            justify-content  : space-around;
             list-style       : none;
-            gap              : 25px;
+            gap              : 15px;
             width            : auto;
             height           : 20px;
             padding          : 10px;
             margin-top       : 8px;
-            margin-left      : 1px;
-            font-size        : 17px;
+            margin-left      : 3px;
+            font-size        : 16px;
             text-align       : center;
             box-shadow       : 1px 1px 10px black;
             border-radius    : 20px;

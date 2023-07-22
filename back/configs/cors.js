@@ -1,5 +1,9 @@
 const errors = require('../misc/errors')
-const WHITELIST = ["localhost"]
+
+const WHITELIST = [
+  "localhost",
+  "vercel",
+];
 
 module.exports = {
   origin: (origin, callback) => {

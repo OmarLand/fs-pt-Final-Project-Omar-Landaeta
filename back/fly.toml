@@ -5,6 +5,7 @@
 
 app = "products-manager"
 primary_region = "mad"
+# console_command = "node /app/index.js"
 
 [http_service]
   internal_port = 3000

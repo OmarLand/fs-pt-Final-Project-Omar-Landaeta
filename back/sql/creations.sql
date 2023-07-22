@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS products (
     name_prod TEXT NOT NULL UNIQUE,
     desc_prod TEXT NOT NULL,
     quant_prod INTEGER DEFAULT 0,
+    name_sup_product TEXT NOT NULL,
     supplier_id UUID REFERENCES suppliers(id)
 );
 

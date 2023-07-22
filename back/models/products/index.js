@@ -41,7 +41,7 @@ const addNewProduct = ( db ) => async( infoProduct ) => {
                 ${infoProduct.desc_prod},
                 ${infoProduct.quant_prod},
                 ${infoProduct.name_sup_product},
-                (SELECT id FROM suppliers WHERE name_sup ILIKE ${infoProduct.name_sup_product})
+                (SELECT id FROM suppliers WHERE name_sup LIKE ${infoProduct.name_sup_product})
             )
         `)
         return {

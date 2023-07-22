@@ -25,7 +25,7 @@ const Suppliers = () => {
                                 return(
                                     <>
                                         <tr>
-                                            <td>{ supplier.name_sup }</td>
+                                            <td key="{supplier.id}">{ supplier.name_sup }</td>
                                             <td>{ supplier.contact_sup }</td>
                                             <td>{ supplier.desc_sup }</td>
                                         </tr>
