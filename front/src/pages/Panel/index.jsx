@@ -2,10 +2,9 @@ import { Link } from 'wouter';
 
 import Styled from '../../components/PanelMain/styles';
 import Title from "../../components/Title";
-import UserName from "../../components/UserName";
-
 import PanelContainer from '../../components/PanelMain';
 import NavBar from '../../components/NavBar';
+import UserName from "../../components/UserName";
 
 const links = [
     <Link href="/panel"><a className='links-styled'> Inicio </a></Link>, 

@@ -80,6 +80,12 @@ const FormNewProductStyle = styled.div`
 
         }
 
+        .warning{
+            color: white;
+            text-shadow: 1px 1px 15px black;
+            font-weigth: bold;
+        }
+
 
     }
 

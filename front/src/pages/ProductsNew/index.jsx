@@ -7,7 +7,7 @@ const NewProductsPage = () => {
         <>
 
             <NewProductsForm/>
-            
+
         </>
     );
 }

@@ -84,7 +84,7 @@ const NewProductsForm = () => {
 
                     <input 
                         className="input-text" 
-                        placeholder='Proveedor existente' 
+                        placeholder='Proveedor existente *' 
                         type="text" 
                         name="name_sup_product	" 
                         id="name_sup_product	"
@@ -105,6 +105,8 @@ const NewProductsForm = () => {
                     />
                
                </form>
+
+               <p className='warning'>* Debe ingresar un proveedor existente</p>
 
             </Styled.FormNewProductStyle>
 

@@ -1,4 +1,4 @@
-// import Styled from './styles.jsx';
+import Styled from './styles.jsx';
 
 import Products from '../Products/Products.jsx';
 
@@ -9,8 +9,12 @@ const PanelContainer = () => {
 
     return (
         <>
-            <h2>Listado de productos:</h2>
-            <Products />
+            <Styled.PanelContain>
+                
+                <h2>Listado de productos:</h2>
+                <Products />
+
+            </Styled.PanelContain>
         </>
     )
 }
